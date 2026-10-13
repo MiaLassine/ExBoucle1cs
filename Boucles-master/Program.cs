@@ -59,6 +59,23 @@ class Program
 
         // Etape 5 : faire une boucle qui se répète à chaque fois que l'utilisateur écrit autre chose que "oui"
 
+        Console.WriteLine("\n------------------------");
+        Console.WriteLine("Dites \"OUI\" pour arrêtez la boucle : ");
+
+        int counter = 0;
+
+        for (string answer = ""; answer != "OUI"; counter++)
+        {
+            answer = Console.ReadLine();
+            if(answer != "OUI")
+            {
+                Console.WriteLine("Encore !");
+            }
+        }
+
+        Console.WriteLine("\n------------------------");
+        Console.WriteLine("Nombre d'essais : " + counter);
+        Console.WriteLine("------------------------\n");
         /*
          * Après votre dernier commit, faites un push de votre projet pour qu'il soit accessible sur github.com
          */
