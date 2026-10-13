@@ -35,7 +35,7 @@ class Program
         // Etape 3 : faire un compteur qui va de -4 à 2
 
         Console.WriteLine("\n------------------------");
-        Console.WriteLine("Compteur 1 : ");
+        Console.WriteLine("Compteur 3 : ");
         for (int c = -4; c <= 2; c++)
         {
             Console.WriteLine("Ligne " + c);
@@ -43,6 +43,19 @@ class Program
         Console.WriteLine("------------------------");
 
         // Etape 4 : faire un compteur qui compte 2 par 2 de 0 à 15
+
+        Console.WriteLine("\n------------------------");
+        Console.WriteLine("Compteur 4 : ");
+        for (int c = 0; c < 15; c = c + 2)
+        {
+            Console.WriteLine("Ligne " + c);
+            if(c == 14)
+            {
+                c = 15;
+                Console.WriteLine("Ligne " + c);
+            }
+        }
+        Console.WriteLine("------------------------");
 
         // Etape 5 : faire une boucle qui se répète à chaque fois que l'utilisateur écrit autre chose que "oui"
 
